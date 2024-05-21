@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+/* Layout */
+:root {
+    /* Colors */
+    /* Primary */
+    --color-primary-very-dark-magenta: hsl(300, 43%, 22%);
+    --color-primary-soft-pink: hsl(333, 80%, 67%);
+    /* Neutral */
+    --color-neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --color-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+    /* Font */
+    --font-family: 'League Spartan', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --body-font-size: 15px;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* need to check this BG */
+    height: 100vh;
+    margin: auto;
+    background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
+    background-position: left top, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    font-size: var(--body-font-size);
+}
+
+.container {
+    padding: 100px 150px;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.rating-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: var(--font-weight-medium);
+}
+
+.title {
+    width: 70%;
+    color: var(--color-primary-very-dark-magenta);
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+
+}
+
+.intro-text {
+    color: var(--color-neutral-dark-grayish-magenta);
+    margin-top: 25px;
+    font-weight: var(--font-weight-regular);
+    width: 65%;
+    line-height: 1.25rem;
+}
+
+
+.rating-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.rate {
+    display: flex;
+    gap: 25px;
+    border-radius: 10px;
+    background: var(--color-neutral-light-grayish-magenta);
+    padding: 20px 30px;
+
+}
+
+
+.comments {
+    display: flex;
+    gap: 25px;
+
+}
+
+.comment-card {
+    background: var(--color-primary-very-dark-magenta);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: var(--color-neutral-white);
+}
+
+.profile {
+    display: flex;
+}
+
+.profile-pic {
+    border-radius: 100%;
+    width: 50px;
+}
